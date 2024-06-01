@@ -1,0 +1,45 @@
+.home_div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.movieCardGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.search {
+    margin: 20px;
+}
+
+.searchBar {
+    background-color: white;
+    border: 5px solid #fa84aa;
+    border-radius: 15px;
+    color: #4ac6d7;
+    font-size: 25px;
+    height: 50px;
+    width: 100%;
+}
+
+.searchButtonContainer {
+    text-align: right;
+}
+
+.button {
+    background-color: #ffd342;
+    border:5px #fa84aa solid;
+    border-radius: 15px;
+    color: #43b8c7;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:10px;
+    padding: 10px;
+}
+.button:hover{
+    background-color: #e81b23;
+    color:#ffd342;
+}

@@ -1,0 +1,21 @@
+.movieCardDiv {
+    background-color: #fa84aa;
+    border: 5px #e81b23 dotted;
+    border-radius: 15px;
+    color: #ffd342;
+    height:auto;
+    padding: 20px;
+}
+.movieCardPoster {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.movieCardPoster img {
+    display: block;
+    max-width: 100%;
+}
+
+.movieCardSumm{
+text-align: center;
+}
