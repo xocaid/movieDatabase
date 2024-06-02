@@ -66,7 +66,43 @@ margin-left: auto;
     padding: 10px;
     text-decoration: none;
 }
-.btn_like:hover{
+.btn_:hover{
     background-color: #e81b23;
     color:#ffd342;   
+}
+
+.pg_btn {
+    background-color: #ffd342;
+    border:5px solid #fa84aa;
+    border-radius: 15px;
+    color: #43b8c7;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 10px;
+    text-decoration: none;
+    /* margin:5px; */
+}
+.pg_btn:hover{
+    background-color: #e81b23;
+    color:#ffd342;
+}
+.other{
+    background-color: #e81b23;
+    color:#ffd342;
+}
+.other:hover{
+    background-color: #fa84aa;
+    color:#43b8c7;
+}
+.intro{
+    background-color:#ffd342;
+    border: dotted 5px rgb(250, 132, 170);
+    border-radius: 15px;
+    color:#43b8c7;
+    font-size:larger;
+    text-align: center;
 }

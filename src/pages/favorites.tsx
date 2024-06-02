@@ -11,7 +11,7 @@ const Favorites = () => {
         <div className={styles.home_div}>
             <Link
                 className={styles.button}
-                href='http://localhost:3000/'>
+                href='/'>
                 Return to Home
             </Link>
             <div className={styles.movieCardGrid}>

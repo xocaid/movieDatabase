@@ -1,6 +1,7 @@
 import React from "react";
 import styles from '../styles/movieCard.module.css';
 import FavButton from "./favbtn";
+import no_img from '../imgs/no_img.jpeg';
 
 export interface MovieInfo {
     Poster: string,
@@ -19,7 +20,7 @@ const MovieCard = ({ movieInfo }: Props) => {
     return (
         <div className={styles.movieCardDiv}>
             <div className={styles.movieCardPoster}>
-                <img src={movieInfo.Poster} alt={movieInfo.Title} />
+                <img src={movieInfo.Poster == 'N/A'? no_img.src: movieInfo.Poster} alt={movieInfo.Title} />
             </div>
             <div className={styles.movieCardSumm}>
                 <div className={styles.movieCardTitle}>
