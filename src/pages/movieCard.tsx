@@ -1,12 +1,14 @@
 import React from "react";
 import styles from '../styles/movieCard.module.css';
+import FavButton from "./favbtn";
 
 export interface MovieInfo {
     Poster: string,
     Title: string,
     Type: string,
     Year: string,
-    Plot: string
+    Plot: string,
+    imdbID: string
 }
 
 interface Props {
@@ -29,6 +31,9 @@ const MovieCard = ({ movieInfo }: Props) => {
                 <div>
                     <h4>{movieInfo.Year}</h4>
                 </div>
+            </div>
+            <div>
+                <FavButton movieLiked={movieInfo}/>
             </div>
         </div>
     )

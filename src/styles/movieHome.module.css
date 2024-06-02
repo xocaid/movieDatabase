@@ -27,19 +27,46 @@
 
 .searchButtonContainer {
     text-align: right;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .button {
     background-color: #ffd342;
-    border:5px #fa84aa solid;
+    border:none;
     border-radius: 15px;
     color: #43b8c7;
+    display: inline-block;
     font-size: 16px;
     font-weight: bold;
     margin-top:10px;
+    margin-bottom: 10px;
     padding: 10px;
+    text-decoration: none;
 }
 .button:hover{
     background-color: #e81b23;
     color:#ffd342;
+}
+.buttonDiv{
+margin-left: auto;
+}
+.btn_like{
+    background-color: #43b8c7;
+    border: none;
+    border-radius: 15px;
+    color: #ffd342;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+.btn_like:hover{
+    background-color: #e81b23;
+    color:#ffd342;   
 }

@@ -2,6 +2,7 @@ import { ChangeEvent, useState } from "react";
 import MovieCard, { MovieInfo } from "./movieCard";
 import styles from '../styles/movieHome.module.css';
 import Header from "./header";
+import Link from "next/link";
 
 const movieAPI = `https://www.omdbapi.com/?apikey=${process.env.NEXT_PUBLIC_OMBD_API_KEY}&`
 
@@ -24,6 +25,11 @@ const Home = () => {
             .then(data => setMovieRes(data.Search))
 
     }
+    const directFavorites = () => {
+        const url = 'http://localhost:3000/favorites';
+        window.location.href=url;
+
+    }
     return (
 
         <div className={styles.home_div}>
@@ -39,30 +45,31 @@ const Home = () => {
                     value={searchInput}
                 />
                 <div className={styles.searchButtonContainer}>
-                    <button className={styles.button} onClick={submitSearch}>Search</button>
+                    <div>
+                        <Link
+                            className={styles.button}
+                            href='http://localhost:3000/favorites'>
+                            Favorites
+                        </Link>
+                    </div>
+                    <div className={styles.buttonDiv}>
+                        <button
+                            className={styles.button}
+                            onClick={submitSearch}>
+                            Search
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className={styles.movieCardGrid}>
-
                 {movieRes && (
                     movieRes.map((movie, index) => {
                         return (
                             <MovieCard key={index} movieInfo={movie} />
                         )
                     })
-
-                )
-                }
+                )}
             </div>
-
-            {/*
-input field - state to keep track of user input(controlled input)
-button to fetch data - onClick 
-        onClick --> makes the fetch request
-        State --> save data from fetch
-
-Render the movie card once you have the data fetched/completed
-*/}
         </div>
     )
 }
